@@ -1,5 +1,5 @@
 package com.project;
-
+//
 public class CheckingAccount extends Account{
 	public CheckingAccount(int p,int t)
 	{
