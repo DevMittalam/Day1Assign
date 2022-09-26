@@ -7,6 +7,7 @@ public class Song_Main {
     {
     	Scanner sc=new Scanner(System.in);
     	Song s=new Song(5);
+	try{
     	while(true)
     	{
 			System.out.println("1.Add Song");
@@ -38,6 +39,11 @@ public class Song_Main {
 		    }
 		    else
 		    	break;
-    	}
+    	   }
+	}
+	 catch(Exception e)
+	 {
+		 e.printStackTrace();
+	 }
     }
 }
