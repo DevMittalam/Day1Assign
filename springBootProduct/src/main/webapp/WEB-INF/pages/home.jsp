@@ -7,9 +7,9 @@
 <title>Products</title>
 </head>
 <body>
- <a href="add">add product</a><br>
- <a href="delete">delete product</a><br>
- <a href="/show">show product</a>
+ <a href="/addPro">add product</a><br>
+ <a href="/deletePro">delete product</a>
+<a href="/show">show products</a>
  <form action="/part">
  enter product id :
  <input type="text" name="id">
