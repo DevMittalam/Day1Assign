@@ -20,8 +20,11 @@ public class HomeCon {
 	public String home() {
 		return "home";
 	}
-	
-	@RequestMapping("/add")
+	@RequestMapping(value="/addPro",method=RequestMethod.GET)
+	public String added() {
+		return "add";
+	}
+	@RequestMapping(value="/add",method=RequestMethod.GET)
 	public String add(HttpServletRequest req) {
 		String id= req.getParameter("id");
 		String name=req.getParameter("name");
@@ -30,6 +33,10 @@ public class HomeCon {
          Product p=new Product(id,name,price,desp);
 		repo.save(p);
 	 return "home";	
+	}
+	@RequestMapping(value="/deletePro",method=RequestMethod.GET)
+	public String deleted() {
+		return "delete";
 	}
 	@RequestMapping("/delete")
 	public String delete(HttpServletRequest req) {
